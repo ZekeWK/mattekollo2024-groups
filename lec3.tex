@@ -1,0 +1,75 @@
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+\pagestyle{empty}
+\setcounter{chapter}{2}
+
+\begin{document}
+\renewcommand*\rmdefault{ppl}\normalfont\upshape
+
+\chapter{Gruppteori 3. Delgrupper \& sidoklasser}
+\kapiteldatum{22 juli}
+\large
+\thispagestyle{empty}
+
+
+
+\begin{definition} Gruppen \(H\) kallas en delgrupp till gruppen \(G\) om elementen i \(H\) är en delmängd av elementen i \(G\) och grupperna har samma operator. Vi skriver då \(H \leq G\).
+\end{definition} % Förtydliga, lägg till delgrupps notation
+
+\begin{problem} Hitta alla delgrupper till heltalen.
+\end{problem}
+
+\begin{problem}
+  Är mängden av alla \textbf{(a)} speglingar \textbf{(b)} rotationer en delgrupp av \(D_n\)?
+\end{problem}
+
+\begin{problem}
+  Hitta 4 delgrupper till dragen på en Rubiks Kub som har olika storlek.
+\end{problem}
+
+\begin{problem}
+  Låt \(G\) vara en cyklisk grupp av storlek \(n\). Visa att för varje faktor till \(n\) finns en delgrupp av den storleken.
+\end{problem}
+
+\begin{problem}
+  Låt \(\varphi\) vara en ismorfi från gruppen \(G_1\) till gruppen \(G_2\) och låt \(H\) vara en delgrupp till \(G_1\). Visa att \(\varphi (H)\), mängden av värden \(\varphi\) antar i \(H\), är en delgrupp till \(G_2\) 
+\end{problem}
+
+\begin{definition} Låt \(H = \left\{h_1, h_2, \dots, h_n\right\}\) vara en delgrupp av \(G\). För varje element \(a\) i \(G\) definierar vi sidoklassen \(a \star H = \left\{a  \star h_1, a \star h_2, \dots, a \star h_n\right\}\).
+\end{definition}
+
+\begin{problem}
+  Vilka är sidoklasserna till delgruppen av rotationer i den dihedrala gruppen \(D_4\)?
+\end{problem}
+
+\begin{problem}
+  Observera gruppen av heltal under addition. Vilka är resklasserna till delgruppen av tal delbara med 7?
+\end{problem}
+
+\begin{problem}
+  Låt \(M\) vara en delmängd till \(G\) med \(k\) element. Hur många element har \(aM\) för olika element \(a\) i \(G\)?
+\end{problem}
+
+\begin{problem}
+  Låt \(G\) vara alla punkter i planet under vektoraddition och \(H\) vara en rät linje genom origo. Vilka är sidoklasserna till \(H\)?
+\end{problem}
+
+\begin{problem}
+  Låt \(H\) vara en delgrupp till gruppen \(G\). Finns det något element \(a\) i \(G\) som inte är i någon sidoklass?
+\end{problem}
+
+\begin{problem}
+  Låt \(H\) vara en delgrupp till gruppen \(G\) och \(a, b\) element i \(G\). Visa att \(aH\) och \(bH\) är samma om och endast om \(ab^{-1}\) är i \(H\).
+\end{problem}
+
+\begin{problem}
+  Låt \(H\) vara en delgrupp till gruppen \(G\) och \(a, b\) element i \(G\). Visa att \(aH\) och \(bH\) antingen inte delar något element är samma.
+\end{problem}
+
+\end{document}

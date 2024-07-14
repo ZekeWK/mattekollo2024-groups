@@ -1,0 +1,91 @@
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+\pagestyle{empty}
+\setcounter{chapter}{1}
+
+\begin{document}
+  \renewcommand*\rmdefault{ppl}\normalfont\upshape
+
+\chapter{Gruppteori 2. Isomorfier}
+\kapiteldatum{21 juli}
+\large
+\thispagestyle{empty}
+
+
+
+\begin{definition} En \textit{isomorfi} \(\varphi \) mellan grupperna \(G_1\) och \(G_2\) är en kartläggning (funktion) så att:
+  \begin{enumerate} % Omformulera!
+    \item \textbf{Bijektiv}: Varje element i \(G_2\) antas som värde av \(\varphi\) för exakt ett element i \(G_1\).
+    \item \textbf{Bevarar operatorn}: För alla \(a, b\) i \(G_1\) gäller \(\varphi(a) \star \varphi (b) = \varphi(a  \star b)\).
+    \item \textbf{Bevarar identitet}: För identitetselementen \(e_1, e_2\) i \(G_1\) respektive \(G_2\) gäller att \(\varphi(e_1) = e_2\).
+  \end{enumerate}
+\end{definition}
+
+\begin{problem}
+  Låt \(\varphi (n) = 2n\).
+  \begin{enumerate}[label=\textbf{\alph*)} ]
+    \item Är \(\varphi\) en isomorfi från heltalen under addition till de jämna heltalen under addition?
+    \item Finns det andra isomorfier som uppfyller (a)? 
+    \item Är \(\varphi\) en isomorfi från heltalen under multiplikation till de jämna heltalen under multiplikation?
+  \end{enumerate}
+\end{problem}
+
+\begin{problem}
+  Finns det en isomorfi mellan \(D_n\) och heltalen modulo \(2n\) under addition om \textbf{(a) \(n = 3\) } \textbf{(b)} \(n > 3\)?
+\end{problem}
+
+\begin{problem}
+  Två grupper \(G_1, G_2\) kallas isomorfa, \(G_1 \sim G_2\),  om det finns en isomorfi mellan dem. Visa att om \(G_1\) är isomorf med \(G_2\) och \(G_2\) är isomorf med \(G_3\) så är \(G_1\) isomorf med \(G_3\).
+\end{problem}
+
+\begin{problem}
+  Är \(D_3\) isomorf med \(S_3\), mängden av alla permutationer (omordningar) av 3 element? Vad gäller för \(D_4\) och \(S_4\)?
+\end{problem}
+
+\begin{problem} En grupp \(G\) kallas cyklisk om det finns ett element \(a\) så att \(G\) är exakt potenserna till \(a\). 
+  \begin{enumerate}[label=\textbf{\alph*)} ]
+    \item Visa att heltalen under addition är cykliska.
+    \item Visa att alla cykliska grupper av storlek \(n\) är isomorfa.
+  \end{enumerate}
+  
+\end{problem}
+
+\begin{problem}
+  För två grupper \(G_1, G_2\) definieras den direkta produkten \(G_1 \times G_2\) som gruppen där:
+  \begin{enumerate}
+    \item Elementen är mängden av alla par \((a_1, a_2)\) där \(a_1, a_2\) är element i \(G_1\) respektive \(G_2\).
+    \item Operatorn appliceras elementvist enligt \((a_1, a_2)  \star (b_1, b_2) = (a_1  \star b_1, a_2  \star b_2)\).
+  \end{enumerate}
+  Är \textbf{(a)} \(\mathbb{Z} _2 \times \mathbb{Z} _2 \sim \mathbb{Z} _4\) \textbf{(b)} \(\mathbb{Z} _2 \times \mathbb{Z} _3 \sim \mathbb{Z} _6\)? % Förtydliga?
+\end{problem}
+
+\begin{problem} % Change ordering perhaps?
+  Är de rationella talen under addition ismorfa med de nollskilda rationella talen under multiplikation?
+\end{problem}
+
+\begin{problem}
+  Är heltalen under addition isomorfa med de rationella talen under addition?
+\end{problem}
+
+\begin{problem}
+  Är de rationella talen under addition isomorfa med de reella talen under addition?
+\end{problem}
+
+\begin{problem}
+  Är de komplexa talen under addition isomorfa med \(\mathbb{R} ^2\) (punkter i reella talplanet) under addition?
+\end{problem}
+
+\begin{problem}
+  Hur kan man definiera produkten på \(\mathbb{R} ^2\) för att de ska vara ismorfa med de komplexa talen under multiplikation?
+\end{problem}
+
+
+% TODO! More difficult problems
+
+\end{document}

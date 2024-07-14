@@ -1,0 +1,44 @@
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+\pagestyle{empty}
+\setcounter{chapter}{3}
+
+\begin{document}
+  \renewcommand*\rmdefault{ppl}\normalfont\upshape
+
+\chapter{Gruppteori 4. Lagrange's Teorem}
+\kapiteldatum{24 juli}
+\large
+\thispagestyle{empty}
+
+\begin{theoremeT} \textbf{(Lagrange's Teorem)} Storleken av en ändlig grupp delas av storleken av dess delgrupper.
+\end{theoremeT} % Förtydliga
+
+\begin{problem}
+  Från förra lektionen vet vi att alla element i gruppen är i någon restklass till varje delgrupp, att två restklasser antingen är disjunkta eller samma samt att alla restklasser hara samma antal element. Bevisa Lagrange's Teorem.
+\end{problem}
+
+\begin{problem}
+  Visa att om storleken av två delgrupper är relativt prima så är deras snitt \(\left\{e\right\}\).
+\end{problem}
+
+\begin{problem}
+  Eulers sats inom talteori säger att för ett tal \(a\) och ett primtal \(p\) så är
+  \(
+    a^k \equiv 1 \mod p
+  \)
+  om \(k\) är antalet element mindre än \(a\) som är relativt primt med det. Bevisa Eulers sats!
+  \\ \\
+  Tips! Ett tal är relativt primt \(n\) om och endast om det är inverterbart modulo \(n\) . 
+\end{problem}
+
+
+
+
+\end{document}

@@ -1,0 +1,106 @@
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+\pagestyle{empty}
+\setcounter{chapter}{0}
+
+\begin{document}
+  \renewcommand*\rmdefault{ppl}\normalfont\upshape
+
+\chapter{Gruppteori 1. Introduktion}
+\kapiteldatum{20 juli}
+\large
+\thispagestyle{empty}
+
+% TODO! Add motivating problems for all lessons
+
+\begin{definition} En \textit{grupp} \(G\) är en mängd \(M\) tillsammans med en operator \(\star \) så att:
+  \begin{enumerate} % Omformulera!
+    \item \textbf{Stängd}: För alla två element \(a, b\) i \(M\) definierar \( \star \) ett element \(a  \star b\) som också är i \(M\).
+    \item \textbf{Associativ}: För alla tre element \(a, b, c\) i \(M\) är \((a  \star b)  \star c = a  \star (b  \star c)\).
+    \item \textbf{Identitet}: Det finns ett \textit{identitets element} \(e\) så att för alla \(a\) i \(M\) så är \(a  \star e = e  \star a = a\).
+    \item \textbf{Invers}: Varje element \(a\) i \(M\) har en \textit{invers}  \(a ^{-1}\) så att \(a  \star a^{-1} = a^{-1}  \star a = e\).
+  \end{enumerate}
+\end{definition}
+
+% Annat exempel är flätor!
+\begin{problem} Motivera att kraven för en grupp uppnås av
+  \textbf{(a)} heltal under addition \textbf{(b)} drag på en rubikskub under sammansättning \textbf{(c)} \textit{permutationer} (omordningar) av 4 objekt under sammansättning.
+\end{problem}
+
+\begin{problem} Motivera att kraven på en grupp \textbf{inte} uppnås av 
+  \textbf{(a)} udda heltalen under addition bold \textbf{(b)} heltalen under multiplikation \textbf{(c)} projektioner av planet på en linje under sammansättning. % TODO Bättre exempel
+\end{problem}
+
+\begin{problem} \textbf{(Dihedrala grupper).} Den \textit{dihedrala} gruppen \(D_n\) är alla rotationer och speglingar av en regelbunden \(n\)-hörning som avbildar den på sig själv. I den dihedrala gruppen \(D_4\):
+  \begin{enumerate}[label=\textbf{(\alph*)}]
+    \item Vilka är de fyra rotationerna i gruppen?
+    \item Vilka är de fyra speglingarna?
+    \item Vilket är identitetselementet?
+  \end{enumerate}
+\end{problem}
+
+\begin{problem} \textbf{(Dihedrala grupper).} För den dihedrala gruppen \(D_3\) låt \(S_1, S_2, S_3\) representera de 3 speglingarna (bestäm i vilken ordning) och \(R_0, R_1, R_2\) de tre rotationerna (\(0, 120^\circ, 240 ^\circ \) medurs). Skapa en multiplikationstabell av elementen!
+\end{problem}
+
+\begin{problem} \textbf{(Dihedrala grupper).}
+  Låt \(S\) vara en bestämd spegling och \(R\) vara en \(\frac{360^\circ}{n}\) rotation i \(D_n\). Kan man beskriva alla element som \(S ^i \star R^j\)? Med potenser menar vi elementet applicerat på sig självt så många gånger. % Förtydliga
+\end{problem}
+
+\begin{problem} Låt \(a, b\) vara element i en grupp. Visa att \((a  \star b) ^{-1} = a ^{-1} \star b ^{-1}\).
+\end{problem}
+
+\begin{problem} \textbf{(Tavla).}
+ Vi vill hänga en tavla med ett snöre (vars ändar är i tavlan) på två spikar. Tillskillnad från vanligt, vill dock att om man tar bort någon spik (oavsett vilken) så ska tavlan ramla! Hur gör vi detta? % TODO Add picture
+\end{problem}
+
+\begin{problem} \textbf{(Tavla).}
+  Hur gör vi om tavlan ska hänga på \(n\) spikar så att tavlan ramlar oavsett vilken spik vi tar bort?
+\end{problem}
+
+\begin{problem}
+  Visa att om \(a, b, c\) är element i en grupp så innebär \(a  \star b = a  \star c\) att \(b = c\).
+\end{problem}
+
+\begin{problem} \textbf{(Rubiks kub).}
+  Visa att repeterad applicering av ett godtyckligt drag på en Rubiks Kub kommer leda tillbaks till var den började.
+\end{problem}
+
+\begin{definition}
+  Låt \(a\) vara ett element i en grupp och \(i\) ett heltal. Då är
+  \[
+    a ^ i =
+    \begin{cases}
+      \underbrace{a  \star \dots  \star a}_{i \text{ gånger} } &\text{ om } i > 0 \\
+      \underbrace{a ^{-1}  \star \dots  \star a ^{-1}}_{i \text{ gånger} } &\text{ om } i < 0 \\
+      e &\text{ om } i = 0
+    \end{cases} 
+  \]
+\end{definition}
+
+\begin{problem} \textbf{(Rubiks kub).}
+  Visa att inget drag på en Rubiks Kub, om det appliceras repeterat, kommer att gå igenom varje möjlig position. Tips! \(a ^ i  \star a ^ j = a ^{j}  \star a ^ i\).
+\end{problem}
+
+\begin{problem} \textbf{(Kortlek).}
+  Kan man göra samma slutsatser som vi gjorde om dragen på en Rubiks Kuben på en blandning av en kortlek?
+\end{problem}
+
+\begin{problem} % Fördela om?
+  Visa att identitetselemenet är unikt.
+\end{problem}
+
+\begin{problem}
+  Visa att inversen är unik.
+\end{problem}
+
+\begin{problem}
+  Visa att snittet av två grupper är en grupp.
+\end{problem}
+
+\end{document}
