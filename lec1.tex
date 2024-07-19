@@ -21,21 +21,45 @@
 
 \begin{definition} En \textit{grupp} \(G\) är en mängd \(M\) tillsammans med en operator \(\star \) så att:
   \begin{enumerate} % Omformulera!
-    \item \textbf{Stängd}: För alla två element \(a, b\) i \(M\) definierar \( \star \) ett element \(a  \star b\) som också är i \(M\).
-    \item \textbf{Associativ}: För alla tre element \(a, b, c\) i \(M\) är \((a  \star b)  \star c = a  \star (b  \star c)\).
-    \item \textbf{Identitet}: Det finns ett \textit{identitets element} \(e\) så att för alla \(a\) i \(M\) så är \(a  \star e = e  \star a = a\).
-    \item \textbf{Invers}: Varje element \(a\) i \(M\) har en \textit{invers}  \(a ^{-1}\) så att \(a  \star a^{-1} = a^{-1}  \star a = e\).
+    \item För alla två element \(a, b\) i \(M\) definierar \( \star \) ett element \(a  \star b\) som också är i \(M\).
+    \item För alla tre element \(a, b, c\) i \(M\) är \((a  \star b)  \star c = a  \star (b  \star c)\).
+    \item Det finns ett \textit{identitets element} \(e\) så att för alla \(a\) i \(M\) så är \(a  \star e = e  \star a = a\).
+    \item Varje element \(a\) i \(M\) har en \textit{invers}  \(a ^{-1}\) så att \(a  \star a^{-1} = a^{-1}  \star a = e\).
   \end{enumerate}
 \end{definition}
 
 % Annat exempel är flätor!
 \begin{problem} Motivera att kraven för en grupp uppnås av
-  \textbf{(a)} heltal under addition \textbf{(b)} drag på en rubikskub under sammansättning \textbf{(c)} \textit{permutationer} (omordningar) av 4 objekt under sammansättning.
+  \textbf{(a)} \textit{permutationer} (omordningar) av 4 objekt under sammansättning \textbf{(b)} rotationer av en hexagon som bevarar den under sammansättning \textbf{(c)} drag på en rubikskub under sammansättning.
 \end{problem}
 
 \begin{problem} Motivera att kraven på en grupp \textbf{inte} uppnås av 
-  \textbf{(a)} udda heltalen under addition bold \textbf{(b)} heltalen under multiplikation \textbf{(c)} projektioner av planet på en linje under sammansättning. % TODO Bättre exempel
+  \textbf{(a)} udda heltalen under addition \textbf{(b)} heltalen under multiplikation \textbf{(c)} heltalen under opertionen \(a  \star b = a  \cdot b + 1\).
 \end{problem}
+
+\begin{problem}
+  Mängden \(M\) består av "klä om strumpan"-operationer:
+  \begin{enumerate}
+    \item Lämna allt som det är.
+    \item Ta av och klä på på andra foten.
+    \item Ta av, vänd ut och in och klä på på samma fot.
+    \item Ta av, vänd ut och in och klä på på andra foten.
+  \end{enumerate}
+  Från början har man en strumpa på en av fötterna och man har två fötter. Visa att \(M\) under sammansättning av operationerna är en grupp!
+\end{problem}
+
+\begin{problem}
+  Låt mängden \(M = \left\{e, a, b, c\right\}\) och operatorn \(\star\) uppfylla multiplikationstabellen \\
+  { \center
+  \begin{tabular}{c|ccc}
+    \( \star \) & \(e\) & \(a\) & \(b\) \\ \midrule
+    \(e\) & \(e\) & \(a\) & \(b\) \\
+    \(a\) & \(a\) & \(e\) & \(b\) \\
+    \(b\) & \(b\) & \(a\) & \(e\) \\
+  \end{tabular} \\ }
+  Är \(G = (M, \star )\) en grupp?
+\end{problem}
+
 
 \begin{problem} \textbf{(Dihedrala grupper).} Den \textit{dihedrala} gruppen \(D_n\) är alla rotationer och speglingar av en regelbunden \(n\)-hörning som avbildar den på sig själv. I den dihedrala gruppen \(D_4\):
   \begin{enumerate}[label=\textbf{(\alph*)}]
@@ -45,30 +69,7 @@
   \end{enumerate}
 \end{problem}
 
-\begin{problem} \textbf{(Dihedrala grupper).} För den dihedrala gruppen \(D_3\) låt \(S_1, S_2, S_3\) representera de 3 speglingarna (bestäm i vilken ordning) och \(R_0, R_1, R_2\) de tre rotationerna (\(0, 120^\circ, 240 ^\circ \) medurs). Skapa en multiplikationstabell av elementen!
-\end{problem}
-
-\begin{problem} \textbf{(Dihedrala grupper).}
-  Låt \(S\) vara en bestämd spegling och \(R\) vara en \(\frac{360^\circ}{n}\) rotation i \(D_n\). Kan man beskriva alla element som \(S ^i \star R^j\)? Med potenser menar vi elementet applicerat på sig självt så många gånger. % Förtydliga
-\end{problem}
-
-\begin{problem} Låt \(a, b\) vara element i en grupp. Visa att \((a  \star b) ^{-1} = a ^{-1} \star b ^{-1}\).
-\end{problem}
-
-\begin{problem} \textbf{(Tavla).}
- Vi vill hänga en tavla med ett snöre (vars ändar är i tavlan) på två spikar. Tillskillnad från vanligt, vill dock att om man tar bort någon spik (oavsett vilken) så ska tavlan ramla! Hur gör vi detta? % TODO Add picture
-\end{problem}
-
-\begin{problem} \textbf{(Tavla).}
-  Hur gör vi om tavlan ska hänga på \(n\) spikar så att tavlan ramlar oavsett vilken spik vi tar bort?
-\end{problem}
-
-\begin{problem}
-  Visa att om \(a, b, c\) är element i en grupp så innebär \(a  \star b = a  \star c\) att \(b = c\).
-\end{problem}
-
-\begin{problem} \textbf{(Rubiks kub).}
-  Visa att repeterad applicering av ett godtyckligt drag på en Rubiks Kub kommer leda tillbaks till var den började.
+\begin{problem} \textbf{(Dihedrala grupper).} Skapa en multiplikationstabell för elementen i \(D_3\)! % För den dihedrala gruppen \(D_3\) låt \(S_1, S_2, S_3\) representera de 3 speglingarna (bestäm i vilken ordning) och \(R_0, R_1, R_2\) de tre rotationerna (\(0, 120^\circ, 240 ^\circ \) medurs). Skapa en multiplikationstabell av elementen! Är \(D_3\) kommutativ?
 \end{problem}
 
 \begin{definition}
@@ -83,24 +84,72 @@
   \]
 \end{definition}
 
+\begin{problem} \textbf{(Dihedrala grupper).}
+  Låt \(S\) vara en bestämd spegling och \(R\) vara den ``kortaste'' rotationen medurs i \(D_n\). Kan alla element i \(D_n\) skrivas på antingen formen \(R ^i \) eller \(S  \cdot R ^{i}\) där \(i\) är ett heltal?
+  % Kan man beskriva alla element som rotationen \(R\) opererad med sig själv ett antal gånger följt av noll eller en speglingar \(S\). Till exempel \(R  \star R  \star R S\), \(R  \star S\) eller \(R  \star R\)?
+\end{problem}
+
+\begin{problem} Låt \(a, b\) vara element i en grupp. Visa att \((a  \star b) ^{-1} = a ^{-1} \star b ^{-1}\).
+\end{problem}
+
+\begin{problem} \textbf{(Tavla).}
+ Vi vill hänga en tavla med ett snöre (vars ändar är i tavlan) på två spikar. Tillskillnad från vanligt, vill vi att om man tar bort någon spik (oavsett vilken) så ska tavlan ramla! Hur gör vi detta? % TODO Add picture
+\end{problem}
+
+\begin{problem} \textbf{(Tavla).}
+  Hur gör vi om tavlan ska hänga på \(n\) spikar så att tavlan ramlar oavsett vilken spik vi tar bort?
+\end{problem}
+
+% \begin{problem}
+%   I ett glasstånd säljs glassar av smaken vanlij, jordgubb och choklad. Vissa av de som står i kön har en glass av en smak de inte vill ha, och andra vill verkligen ha en glass av en viss smak! Om en person som har en glass, och en som inte vill ha sin står efter varanndra så kommer ett glassbyte att ske och båda går därifrån. Ge ett exempel på en kö där alla smaker är representerade, och där om alla som vill ha ett 
+% 
+%   Ge ett exempel på en glasskö där alla smaker är representerade, så att om någon glassmak skulle bli 
+%   På stranden finns det några personer som har en glass
+%   av antingen smaken jordgubb, choklad eller vanlij, men vill inte ha den
+% \end{problem}
+
+
+\begin{problem}
+  Visa att om \(a, b, c\) är element i en grupp så innebär \(a  \star b = a  \star c\) att \(b = c\).
+\end{problem}
+
 \begin{problem} \textbf{(Rubiks kub).}
-  Visa att inget drag på en Rubiks Kub, om det appliceras repeterat, kommer att gå igenom varje möjlig position. Tips! \(a ^ i  \star a ^ j = a ^{j}  \star a ^ i\).
+  Visa att repeterad applicering av ett godtyckligt drag på en Rubiks Kub kommer leda tillbaks till var den började.
+\end{problem}
+
+\begin{problem} \textbf{(Rubiks kub).}
+  Visa att inget drag på en Rubiks Kub, om det appliceras repeterat, kommer att gå igenom varje möjlig position.
 \end{problem}
 
 \begin{problem} \textbf{(Kortlek).}
   Kan man göra samma slutsatser som vi gjorde om dragen på en Rubiks Kuben på en blandning av en kortlek?
 \end{problem}
 
+\subsection*{Extrauppgifter}
 \begin{problem} % Fördela om?
-  Visa att identitetselemenet är unikt.
+  Visa att identitetselementet är unikt.
 \end{problem}
 
 \begin{problem}
-  Visa att inversen är unik.
+  Visa att varje element har exakt en invers.
 \end{problem}
 
 \begin{problem}
   Visa att snittet av två grupper är en grupp.
 \end{problem}
+
+\begin{problem}
+  Hitta två grupper av samma storlek som ``beter sig'' annorlunda.
+\end{problem}
+
+\begin{problem}
+  Hitta två grupper av samma storlek som ``beter sig'' annorlunda.
+\end{problem}
+
+
+% \begin{problem}
+%   Det minsta positiva heltal \(n\) så att \(a ^ n = e\) för något \(a\) i en grupp kallas för ordningen av \(a\). Visa att ordningen om \(a^k = e\) måste \(n \) dela \(k\).
+% \end{problem}
+
 
 \end{document}
