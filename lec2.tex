@@ -17,56 +17,93 @@
 \large
 \thispagestyle{empty}
 
-
-
 \begin{definition} En \textit{isomorfi} \(\varphi \) mellan grupperna \(G_1\) och \(G_2\) är en kartläggning (funktion) så att:
   \begin{enumerate} % Omformulera!
-    \item \textbf{Bijektiv}: Varje element i \(G_2\) antas som värde av \(\varphi\) för exakt ett element i \(G_1\).
-    \item \textbf{Bevarar operatorn}: För alla \(a, b\) i \(G_1\) gäller \(\varphi(a) \star \varphi (b) = \varphi(a  \star b)\).
-    \item \textbf{Bevarar identitet}: För identitetselementen \(e_1, e_2\) i \(G_1\) respektive \(G_2\) gäller att \(\varphi(e_1) = e_2\).
+    \item Varje element i \(G_2\) antas som värde av \(\varphi\) för exakt ett element i \(G_1\).
+    \item För alla \(a, b\) i \(G_1\) gäller \(\varphi(a) \star \varphi (b) = \varphi(a  \star b)\).
+    \item För identitetselementen \(e_1, e_2\) i \(G_1\) respektive \(G_2\) gäller att \(\varphi(e_1) = e_2\).
   \end{enumerate}
 \end{definition}
 
 \begin{problem}
-  Låt \(\varphi (n) = 2n\).
-  \begin{enumerate}[label=\textbf{\alph*)} ]
-    \item Är \(\varphi\) en isomorfi från heltalen under addition till de jämna heltalen under addition?
-    \item Finns det andra isomorfier som uppfyller (a)? 
-    \item Är \(\varphi\) en isomorfi från heltalen under multiplikation till de jämna heltalen under multiplikation?
-  \end{enumerate}
+  Gruppen \(G_1\) av ``klä om strumpan''-operationer (från förra lektionen), består av operationerna: ``Gör inget'', ``byt fot'', ''vänd ut och in'', ``vänd och byt fot''. Gruppen \(G_2\) består istället av mängden \(\left\{e, a, b, c\right\}\) och operatorn \(\star\) som uppfyller multiplikationstabellen 
+  { \center
+  \begin{tabular}{c|cccc}
+    \( \star \) & \(e\) & \(a\) & \(b\) & \(c\)  \\ \midrule
+    \(e\) & \(e\) & \(a\) & \(b\) & \(c\)  \\
+    \(a\) & \(a\) & \(e\) & \(c\) & \(b\) \\
+    \(b\) & \(b\) & \(c\) & \(e\) & \(a\) \\
+    \(c\) & \(c\) & \(b\) & \(a\) & \(e\) \\
+  \end{tabular}\\}
+  \vspace{2ex}
+  \noindent Hitta en isomorfi mellan \(G_1\) och \(G_2\).
 \end{problem}
 
 \begin{problem}
-  Finns det en isomorfi mellan \(D_n\) och heltalen modulo \(2n\) under addition om \textbf{(a) \(n = 3\) } \textbf{(b)} \(n > 3\)?
+  Hitta på en grupp som är isomorf med både \(G_1\) och \(G_2\) från förra uppgiften. Ju skummare desto bättre!
+\end{problem}
+
+% \begin{problem}
+%   Låt \(G_1\) vara heltalen modulo 4 under addition och \(G_2\) vara rotationerna av en kvadrat som bevarar den.
+%   \begin{enumerate}[label=\textbf{(\alph*)}]
+%     \item Gör en additionstabell för \(G_1\). 
+%     \item Gör en multiplikationstabell för \(G_2\). 
+%     \item Hitta en isomorfi mellan grupperna.
+%     \item Överensstämmmer de?
+%   \end{enumerate} % TODO!
+%   
+% \end{problem}
+
+\begin{problem}
+  Låt \(\varphi (n) = 2n\). Är \(\varphi\) en isomorfi från heltalen under addition till de jämna heltalen under addition? Vilka andra sådana isomorfier finns det? 
 \end{problem}
 
 \begin{problem}
-  Två grupper \(G_1, G_2\) kallas isomorfa, \(G_1 \sim G_2\),  om det finns en isomorfi mellan dem. Visa att om \(G_1\) är isomorf med \(G_2\) och \(G_2\) är isomorf med \(G_3\) så är \(G_1\) isomorf med \(G_3\).
+  Grupperna \(G_1, G_2\) kallas isomorfa om det finns en isomorfi mellan dem. Visa att om \(G_1\) är isomorf med \(G_2\) och \(G_2\) är isomorf med \(G_3\) så är \(G_1\) isomorf med \(G_3\).
 \end{problem}
 
-\begin{problem}
-  Är \(D_3\) isomorf med \(S_3\), mängden av alla permutationer (omordningar) av 3 element? Vad gäller för \(D_4\) och \(S_4\)?
+% \begin{problem}
+%   Är \(D_3\) isomorf med \(S_3\), mängden av alla permutationer (omordningar) av 3 element? Vad gäller för \(D_4\) och \(S_4\)?
+% \end{problem}
+
+\begin{definition}
+  En grupp \(G\) kallas \textit{cyklisk} om det finns ett element \(a\) i \(G\) så att \(G\) är exakt potenserna till \(a\). 
+\end{definition}
+
+\begin{problem}\textbf{(Cykliska grupper).} Visa att heltalen modulo \(n\) under addition är cykliska.
 \end{problem}
 
-\begin{problem} En grupp \(G\) kallas cyklisk om det finns ett element \(a\) så att \(G\) är exakt potenserna till \(a\). 
-  \begin{enumerate}[label=\textbf{\alph*)} ]
-    \item Visa att heltalen under addition är cykliska.
-    \item Visa att alla cykliska grupper av storlek \(n\) är isomorfa.
-  \end{enumerate}
-  
+\begin{problem}\textbf{(Cykliska grupper).} Visa att alla cykliska grupper av storlek \(n\) är isomorfa med varandra och inga andra.
 \end{problem}
 
-\begin{problem}
-  För två grupper \(G_1, G_2\) definieras den direkta produkten \(G_1 \times G_2\) som gruppen där:
+\begin{problem} \textbf{(Cykliska grupper).} Låt \(a\) vara ett element i \(G_1\) och \(\varphi \) vara en isomorfi från \(G_1\) till \(G_2\). Visa att \(a^n = e_1 \) är ekvivalent \(\varphi(a)^n = e_2\).
+\end{problem}
+
+
+\begin{definition}[]
+  För två grupper \(G_1, G_2\) definieras den \textit{direkta produkten} \(G_1 \times G_2\) som gruppen där:
   \begin{enumerate}
     \item Elementen är mängden av alla par \((a_1, a_2)\) där \(a_1, a_2\) är element i \(G_1\) respektive \(G_2\).
     \item Operatorn appliceras elementvist enligt \((a_1, a_2)  \star (b_1, b_2) = (a_1  \star b_1, a_2  \star b_2)\).
   \end{enumerate}
-  Är \textbf{(a)} \(\mathbb{Z} _2 \times \mathbb{Z} _2 \sim \mathbb{Z} _4\) \textbf{(b)} \(\mathbb{Z} _2 \times \mathbb{Z} _3 \sim \mathbb{Z} _6\)? % Förtydliga?
+\end{definition}
+
+\begin{problem} \textbf{(Direkta produkten).} 
+  Låt \(\mathbb{Z}_n \) vara heltalen modulo \(n\). Är \textbf{(a)} \(\mathbb{Z} _2 \times \mathbb{Z} _2 \sim \mathbb{Z} _4\) \textbf{(b)} \(\mathbb{Z} _2 \times \mathbb{Z} _3 \sim \mathbb{Z} _6\)? % Förtydliga?
 \end{problem}
 
+\begin{problem} \textbf{(Direkta produkten).} 
+  Vilka krav ställs på \(n\) och \(m\) om \(\mathbb{Z} _{n  \cdot m} \sim \mathbb{Z} _n \times \mathbb{Z} _m\)?
+\end{problem}
+
+\begin{problem} \textbf{(Direkta produkten).} 
+  Låt \(\varphi \) vara en isomorfi från \(\mathbb{Z} _ {2  \cdot 3  \cdot 5  \cdot 7}\) till \(\mathbb{Z} _2 \times \mathbb{Z} _3 \times \mathbb{Z} _5 \times \mathbb{Z} _7\). \textbf{(a)} Beräkna \(\varphi (11 ^{-1})\) där \(11 ^{-1}\) är den multiplikativa inversen till \(11\) i \(\mathbb{Z} _{2  \cdot 3  \cdot 5  \cdot 7}\). \textbf{(b)} Beskriv hur man skulle kunna beräkna \(11 ^{-1}\).
+\end{problem}
+
+
+
 \begin{problem} % Change ordering perhaps?
-  Är de rationella talen under addition ismorfa med de nollskilda rationella talen under multiplikation?
+  Är de rationella talen under addition isomorfa med de nollskilda rationella talen under multiplikation?
 \end{problem}
 
 \begin{problem}
@@ -82,7 +119,7 @@
 \end{problem}
 
 \begin{problem}
-  Hur kan man definiera produkten på \(\mathbb{R} ^2\) för att de ska vara ismorfa med de komplexa talen under multiplikation?
+  Hur kan man definiera produkten på \(\mathbb{R} ^2\) för att de ska vara isomorfa med de komplexa talen under multiplikation?
 \end{problem}
 
 
