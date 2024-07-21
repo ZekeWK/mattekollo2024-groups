@@ -26,7 +26,7 @@
 \end{definition}
 
 \begin{problem}
-  Gruppen \(G_1\) av ``klä om strumpan''-operationer (från förra lektionen), består av operationerna: ``Gör inget'', ``byt fot'', ''vänd ut och in'', ``vänd och byt fot''. Gruppen \(G_2\) består istället av mängden \(\left\{e, a, b, c\right\}\) och operatorn \(\star\) som uppfyller multiplikationstabellen 
+  Gruppen \(G_1\) av ``klä om strumpan''-operationer (från förra lektionen), består av operationerna: ``gör inget'', ``byt fot'', ''vänd ut och in'', ``vänd ut och in och byt fot''. Gruppen \(G_2\) består istället av mängden \(\left\{e, a, b, c\right\}\) och operatorn \(\star\) som uppfyller multiplikationstabellen 
   { \center
   \begin{tabular}{c|cccc}
     \( \star \) & \(e\) & \(a\) & \(b\) & \(c\)  \\ \midrule
@@ -40,8 +40,14 @@
 \end{problem}
 
 \begin{problem}
-  Hitta på en grupp som är isomorf med både \(G_1\) och \(G_2\) från förra uppgiften. Ju skummare desto bättre!
+  Visa att \(D_3\) är isomorf med permutationsgruppen \(S_3\), mängden av alla omordningar av 3 element.
 \end{problem}
+
+\begin{problem}
+  Motivera att gruppen av rotationer av en kub är isomorf med permutationsgruppen \(S_4\). 
+\end{problem}
+
+
 
 % \begin{problem}
 %   Låt \(G_1\) vara heltalen modulo 4 under addition och \(G_2\) vara rotationerna av en kvadrat som bevarar den.
@@ -54,33 +60,56 @@
 %   
 % \end{problem}
 
-\begin{problem}
-  Låt \(\varphi (n) = 2n\). Är \(\varphi\) en isomorfi från heltalen under addition till de jämna heltalen under addition? Vilka andra sådana isomorfier finns det? 
-\end{problem}
-
-\begin{problem}
-  Grupperna \(G_1, G_2\) kallas isomorfa om det finns en isomorfi mellan dem. Visa att om \(G_1\) är isomorf med \(G_2\) och \(G_2\) är isomorf med \(G_3\) så är \(G_1\) isomorf med \(G_3\).
-\end{problem}
+% \begin{problem}
+%   Låt \(\varphi (n) = 2n\). Är \(\varphi\) en isomorfi från heltalen under addition till de jämna heltalen under addition? Vilka andra sådana isomorfier finns det? 
+% \end{problem}
 
 % \begin{problem}
 %   Är \(D_3\) isomorf med \(S_3\), mängden av alla permutationer (omordningar) av 3 element? Vad gäller för \(D_4\) och \(S_4\)?
 % \end{problem}
 
 \begin{definition}
-  En grupp \(G\) kallas \textit{cyklisk} om det finns ett element \(a\) i \(G\) så att \(G\) är exakt potenserna till \(a\). 
+  En grupp \(G\) kallas \textit{cyklisk} om det finns ett element \(a\) i \(G\) så att mängden till \(G\) är exakt potenserna till \(a\). 
 \end{definition}
 
 \begin{problem}\textbf{(Cykliska grupper).} Visa att heltalen modulo \(n\) under addition är cykliska.
 \end{problem}
 
+\begin{problem}
+  Grupperna \(G_1, G_2\) kallas isomorfa om det finns en isomorfi mellan dem. Visa att om \(G_1\) är isomorf med \(G_2\) och \(G_2\) är isomorf med \(G_3\) så är \(G_1\) isomorf med \(G_3\).
+\end{problem}
+
 \begin{problem}\textbf{(Cykliska grupper).} Visa att alla cykliska grupper av storlek \(n\) är isomorfa med varandra och inga andra.
 \end{problem}
 
-\begin{problem} \textbf{(Cykliska grupper).} Låt \(a\) vara ett element i \(G_1\) och \(\varphi \) vara en isomorfi från \(G_1\) till \(G_2\). Visa att \(a^n = e_1 \) är ekvivalent \(\varphi(a)^n = e_2\).
+% \begin{problem} \textbf{(Cykliska grupper).} Låt \(a\) vara ett element i \(G_1\) och \(\varphi \) vara en isomorfi från \(G_1\) till \(G_2\). Visa att \(a^n = e_1 \) är ekvivalent \(\varphi(a)^n = e_2\).
+% \end{problem}
+
+\begin{definition}
+  Låt \(H = (M_H,  \star)\) och \(G = (M_G,  \star)\) vara grupper. \(H\) är en \textit{delgrupp} till \(G\) om \(M_H\) är en delmängd till \(M_G\).
+\end{definition}
+
+\begin{problem}
+  Är mängden av alla \textbf{(a)} speglingar \textbf{(b)} rotationer en delgrupp av \(D_n\)?
+\end{problem}
+
+\begin{problem}
+  Hitta 4 delgrupper till dragen på en Rubiks Kub som har olika storlek.
+\end{problem}
+
+\begin{problem}
+  Låt \(\varphi \) vara en isomorfi från \(G_1\) till \(G_2\) och och \(H_1 = (\left\{a_1, \dots, a_n \right\},  \star )\) vara en delgrupp till \(G_1\). Visa att \(H_2 = ( \left\{\varphi (a_1), \dots, \varphi(a_n)\right\},  \star )\) är en delgrupp till \(G_2\).
+\end{problem}
+
+\begin{problem}
+  Hitta en delgrupp av \(S_4\) som är isomorf med ``klä om strumpan''-gruppen.
 \end{problem}
 
 
-\begin{definition}[]
+\subsection*{Extra uppgifter}
+
+
+\begin{definition}
   För två grupper \(G_1, G_2\) definieras den \textit{direkta produkten} \(G_1 \times G_2\) som gruppen där:
   \begin{enumerate}
     \item Elementen är mängden av alla par \((a_1, a_2)\) där \(a_1, a_2\) är element i \(G_1\) respektive \(G_2\).
@@ -89,16 +118,29 @@
 \end{definition}
 
 \begin{problem} \textbf{(Direkta produkten).} 
-  Låt \(\mathbb{Z}_n \) vara heltalen modulo \(n\). Är \textbf{(a)} \(\mathbb{Z} _2 \times \mathbb{Z} _2 \sim \mathbb{Z} _4\) \textbf{(b)} \(\mathbb{Z} _2 \times \mathbb{Z} _3 \sim \mathbb{Z} _6\)? % Förtydliga?
+  Låt \(G = \mathbb{Z} _4 \times \mathbb{Z} _5\) under addition. Vad är inversen till \((2, 0)\)? 
+\end{problem}
+
+
+\begin{problem} \textbf{(Direkta produkten).} 
+  Låt \(\mathbb{Z}_n \) vara heltalen modulo \(n\). Är \textbf{(a)} \(\mathbb{Z} _2 \times \mathbb{Z} _2\) isomorf med \(\mathbb{Z} _4\) \textbf{(b)} \(\mathbb{Z} _2 \times \mathbb{Z} _3\) isomorf med \(\mathbb{Z} _6\)? % Förtydliga?
 \end{problem}
 
 \begin{problem} \textbf{(Direkta produkten).} 
-  Vilka krav ställs på \(n\) och \(m\) om \(\mathbb{Z} _{n  \cdot m} \sim \mathbb{Z} _n \times \mathbb{Z} _m\)?
+  Visa att \(\mathbb{Z} _2 \times \mathbb{Z} _2\) under addition är isomorf med ''klä om strumpan``-gruppen.
 \end{problem}
 
-\begin{problem} \textbf{(Direkta produkten).} 
-  Låt \(\varphi \) vara en isomorfi från \(\mathbb{Z} _ {2  \cdot 3  \cdot 5  \cdot 7}\) till \(\mathbb{Z} _2 \times \mathbb{Z} _3 \times \mathbb{Z} _5 \times \mathbb{Z} _7\). \textbf{(a)} Beräkna \(\varphi (11 ^{-1})\) där \(11 ^{-1}\) är den multiplikativa inversen till \(11\) i \(\mathbb{Z} _{2  \cdot 3  \cdot 5  \cdot 7}\). \textbf{(b)} Beskriv hur man skulle kunna beräkna \(11 ^{-1}\).
-\end{problem}
+
+
+% \begin{problem} \textbf{(Direkta produkten).} 
+%   Vilka krav ställs på \(n\) och \(m\) om \(\mathbb{Z} _{n  \cdot m} \sim \mathbb{Z} _n \times \mathbb{Z} _m\)?
+% \end{problem}
+% 
+% \begin{problem} \textbf{(Direkta produkten).} 
+%   Låt \(\varphi \) vara en isomorfi från \(\mathbb{Z} _ {2  \cdot 3  \cdot 5  \cdot 7}\) till \(\mathbb{Z} _2 \times \mathbb{Z} _3 \times \mathbb{Z} _5 \times \mathbb{Z} _7\). \textbf{(a)} Beräkna \(\varphi (11 ^{-1})\) där \(11 ^{-1}\) är den multiplikativa inversen till \(11\) i \(\mathbb{Z} _{2  \cdot 3  \cdot 5  \cdot 7}\). \textbf{(b)} Beskriv hur man skulle kunna beräkna \(11 ^{-1}\).
+% \end{problem}
+
+
 
 
 
@@ -114,15 +156,12 @@
   Är de rationella talen under addition isomorfa med de reella talen under addition?
 \end{problem}
 
-\begin{problem}
-  Är de komplexa talen under addition isomorfa med \(\mathbb{R} ^2\) (punkter i reella talplanet) under addition?
-\end{problem}
-
-\begin{problem}
-  Hur kan man definiera produkten på \(\mathbb{R} ^2\) för att de ska vara isomorfa med de komplexa talen under multiplikation?
-\end{problem}
-
-
-% TODO! More difficult problems
+% \begin{problem} \textbf{(Direkta produkten).} 
+%   Vilka krav ställs på \(n\) och \(m\) om \(\mathbb{Z} _{n  \cdot m} \sim \mathbb{Z} _n \times \mathbb{Z} _m\)?
+% \end{problem}
+% 
+% \begin{problem} \textbf{(Direkta produkten).} 
+%   Låt \(\varphi \) vara en isomorfi från \(\mathbb{Z} _ {2  \cdot 3  \cdot 5  \cdot 7}\) till \(\mathbb{Z} _2 \times \mathbb{Z} _3 \times \mathbb{Z} _5 \times \mathbb{Z} _7\). \textbf{(a)} Beräkna \(\varphi (11 ^{-1})\) där \(11 ^{-1}\) är den multiplikativa inversen till \(11\) i \(\mathbb{Z} _{2  \cdot 3  \cdot 5  \cdot 7}\). \textbf{(b)} Beskriv hur man skulle kunna beräkna \(11 ^{-1}\).
+% \end{problem}
 
 \end{document}
