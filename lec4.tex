@@ -12,16 +12,39 @@
 \begin{document}
   \renewcommand*\rmdefault{ppl}\normalfont\upshape
 
-\chapter{Gruppteori 4. Lagrange's Teorem}
+\chapter{Gruppteori 4. Lagranges sats}
 \kapiteldatum{24 juli}
 \large
-\thispagestyle{empty}
+\thispagestyle{empty} 
 
-\begin{theoremeT} \textbf{(Lagrange's Teorem)} Storleken av en ändlig grupp delas av storleken av dess delgrupper.
+\begin{definition} Låt \(H = \left\{h_1, h_2, \dots, h_n\right\}\) vara en delgrupp av \(G\). För varje element \(a\) i \(G\) definierar vi \textit{sidoklassen} \(a \star H = \left\{a  \star h_1, a \star h_2, \dots, a \star h_n\right\}\).
+\end{definition}
+
+\begin{problem}
+  Låt \(M\) vara en delgrupp till \(G\) med \(k\) element. Hur många element har \(a  \star M\)?
+\end{problem}
+
+\begin{problem} 
+	Finns det något element som inte är i någon sidoklass?
+\end{problem}
+
+\begin{problem}
+	Visa att om två sidoklasser båda innehåller ett visst element så sammanfaller de.
+\end{problem}
+
+\begin{theoremeT} \textbf{(Lagranges sats)} Storleken av en ändlig grupp delas av storleken av dess delgrupper.
 \end{theoremeT} % Förtydliga
 
 \begin{problem}
-  Från förra lektionen vet vi att alla element i gruppen är i någon restklass till varje delgrupp, att två restklasser antingen är disjunkta eller samma samt att alla restklasser hara samma antal element. Bevisa Lagrange's Teorem.
+  Bevisa Lagranges sats.
+\end{problem}
+
+\begin{problem}
+  Hitta de två delgrupperna till \(\mathbb{Z} _{29}\).
+\end{problem}
+
+\begin{problem}
+  Visa att alla grupper av primtals storlek är cykliska.
 \end{problem}
 
 \begin{problem}
@@ -29,16 +52,19 @@
 \end{problem}
 
 \begin{problem}
-  Eulers sats inom talteori säger att för ett tal \(a\) och ett primtal \(p\) så är
-  \(
-    a^k \equiv 1 \mod p
-  \)
-  om \(k\) är antalet element mindre än \(a\) som är relativt primt med det. Bevisa Eulers sats!
-  \\ \\
-  Tips! Ett tal är relativt primt \(n\) om och endast om det är inverterbart modulo \(n\) . 
+ Visa att \(a ^{|G|} = e\) för elementet \(a\) i gruppen \(G\) med \(|G| \) stycken element.
 \end{problem}
 
+\begin{theoremeT} \textbf{(Eulers sats).} 
+  För två positiva och relativt prima heltal \(a, n\) gäller att \(a ^{\varphi (n)} \equiv 1 \mod n\) där \(\phi (n)\) är antalet tal mindre än \(n\) som är relativt prima till \(n\).
+\end{theoremeT}
 
+\begin{problem}
+  Bevisa Eulers sats.
+\end{problem}
+
+\subsection*{Extrauppgifter}
+Jobba på uppgifterna från tidigare blad. Det finns även ett blad om gruppverkan och Burnsides lemma om man önskar.
 
 
 \end{document}
