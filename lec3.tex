@@ -17,31 +17,43 @@
 \large
 \thispagestyle{empty}
 
+\begin{problem}
+  Hitta en delgrupp av permutationsgruppen \(S_4\) som är isomorf med ``klä om strumpan''-gruppen.
+\end{problem}
 
-
-\begin{definition} Gruppen \(H\) kallas en delgrupp till gruppen \(G\) om elementen i \(H\) är en delmängd av elementen i \(G\) och grupperna har samma operator. Vi skriver då \(H \leq G\).
-\end{definition} % Förtydliga, lägg till delgrupps notation
-
-\begin{problem} Hitta alla delgrupper till heltalen.
+\begin{problem} \label{problem:multiplikationstabellen}
+  Gruppen \(G\) består av mängden \(\left\{e, \pi , \tau\right\}\) och operatorn \(\star\) som uppfyller multiplikationstabellen 
+  { \center
+  \begin{tabular}{c|cccc}
+    \( \star \) & \(e\) & \(\pi \) & \(\tau\) \\ \midrule
+    \(e\) & \(e\) & \(\pi\) & \(\tau\) \\
+    \(\pi\) & \(\pi \) & \(\tau\) & \(e\) \\
+    \(\tau\) & \(\tau \) & \(e\) & \(\pi\) \\
+  \end{tabular}\\}
+  \vspace{2ex}
+  \noindent Hitta en isomorfi från \(G\) till en delgrupp av \(S_3\). % TODO! Double check
 \end{problem}
 
 \begin{problem}
-  Är mängden av alla \textbf{(a)} speglingar \textbf{(b)} rotationer en delgrupp av \(D_n\)?
+	Hitta en isomorfi från den dihedrala gruppen \(D_4\) till en delgrupp av permutationsgruppen \(S_8\).
+\end{problem}
+
+\begin{theoremeT} \textbf{(Cayleys sats).} Varje grupp är isomorf med en delgrupp till någon permutationsgrupp \(S_n\).
+\end{theoremeT}
+
+\begin{problem}
+  Låt \(G\) vara gruppen i problem \ref{problem:multiplikationstabellen}. Visa att \(f(x) = \pi\) permuterar elementen i \(G\).
 \end{problem}
 
 \begin{problem}
-  Hitta 4 delgrupper till dragen på en Rubiks Kub som har olika storlek.
+	Bevisa Cayleys sats konstruktivt.
 \end{problem}
 
 \begin{problem}
-  Låt \(G\) vara en cyklisk grupp av storlek \(n\). Visa att för varje faktor till \(n\) finns en delgrupp av den storleken.
+	Hitta alla grupper av storlek \textbf{(a)} \(3\) \textbf{(b)} \(4\).
 \end{problem}
 
-\begin{problem}
-  Låt \(\varphi\) vara en ismorfi från gruppen \(G_1\) till gruppen \(G_2\) och låt \(H\) vara en delgrupp till \(G_1\). Visa att \(\varphi (H)\), mängden av värden \(\varphi\) antar i \(H\), är en delgrupp till \(G_2\) 
-\end{problem}
-
-\begin{definition} Låt \(H = \left\{h_1, h_2, \dots, h_n\right\}\) vara en delgrupp av \(G\). För varje element \(a\) i \(G\) definierar vi sidoklassen \(a \star H = \left\{a  \star h_1, a \star h_2, \dots, a \star h_n\right\}\).
+\begin{definition} Låt \(H = \left\{h_1, h_2, \dots, h_n\right\}\) vara en delgrupp av \(G\). För varje element \(a\) i \(G\) definierar vi \textit{sidoklassen} \(a \star H = \left\{a  \star h_1, a \star h_2, \dots, a \star h_n\right\}\).
 \end{definition}
 
 \begin{problem}
@@ -49,27 +61,58 @@
 \end{problem}
 
 \begin{problem}
-  Observera gruppen av heltal under addition. Vilka är resklasserna till delgruppen av tal delbara med 7?
+  Vilka är sidoklasserna till delgruppen av \((\left\{e, S\right\},  \star \) i den dihedrala gruppen \(D_4\) om \(S\) är en specifik spegling?
 \end{problem}
 
 \begin{problem}
-  Låt \(M\) vara en delmängd till \(G\) med \(k\) element. Hur många element har \(aM\) för olika element \(a\) i \(G\)?
+  Observera gruppen av heltal under addition. Vilka är sidoklasserna till delgruppen av tal delbara med 7?
 \end{problem}
 
 \begin{problem}
-  Låt \(G\) vara alla punkter i planet under vektoraddition och \(H\) vara en rät linje genom origo. Vilka är sidoklasserna till \(H\)?
+  Låt \(M\) vara en delgrupp till \(G\) med \(k\) element. Hur många element har \(a  \star M\)?
+\end{problem}
+
+\begin{problem} 
+	Finns det något element som inte är i någon sidoklass?
 \end{problem}
 
 \begin{problem}
-  Låt \(H\) vara en delgrupp till gruppen \(G\). Finns det något element \(a\) i \(G\) som inte är i någon sidoklass?
+	Visa att om två sidoklasser båda innehåller ett visst element så sammanfaller de.
 \end{problem}
 
-\begin{problem}
-  Låt \(H\) vara en delgrupp till gruppen \(G\) och \(a, b\) element i \(G\). Visa att \(aH\) och \(bH\) är samma om och endast om \(ab^{-1}\) är i \(H\).
+\begin{problem} \textbf{(Lagranges sats).} 
+	Visa att för en ändlig grupp \(G\) och en delgrupp \(H\) måste storleken av \(H\) dela storleken av \(G\).
 \end{problem}
 
-\begin{problem}
-  Låt \(H\) vara en delgrupp till gruppen \(G\) och \(a, b\) element i \(G\). Visa att \(aH\) och \(bH\) antingen inte delar något element är samma.
-\end{problem}
+% \subsection*{Extrauppgifter}
+% \begin{definition} \textbf{(Normal delgrupp).} 
+%   En \textit{normal} delgrupp \(H\) till gruppen \(G\) uppfyller att \(aH = Ha\) för alla \(a\) i \(G\).
+% \end{definition}
+% 
+% \begin{problem}
+%   Är mängden av alla \textbf{(a)} speglingar \textbf{(b)} rotationer en normal delgrupp i \(D_4\)?
+% \end{problem}
+% 
+% \begin{problem}
+%   Ge ett exempel på en icke-normal delgrupp till \(S_3\).
+% \end{problem}
+% 
+% \begin{definition}
+%   Låt \(H\) vara en normal delgrupp till gruppen \(G\). Mängden av alla sidoklasser \(M\) tillsammans med operatorn \((a  \star H)  \star (b \star H) = (a  \star b) H\) skapar \textit{kvotgruppen} till \(H\).
+% \end{definition}
+% 
+% \begin{problem}
+%   Vad är kvotgruppen av heltalen under addition med delgruppen av tal delbara med \(7\)?
+% \end{problem}
+% 
+% \begin{problem}
+%   Varför vill vi i definitionen av en kvotgrupp att \(H\) ska vara normal?
+% \end{problem}
+% 
+% \begin{problem}
+%   Vad skulle kvotgrupper kunna användas till?
+% \end{problem}
+
+
 
 \end{document}
