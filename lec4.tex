@@ -13,7 +13,7 @@
   \renewcommand*\rmdefault{ppl}\normalfont\upshape
 
 \chapter{Gruppteori 4. Lagranges sats}
-\kapiteldatum{24 juli}
+\kapiteldatum{23 juli}
 \large
 \thispagestyle{empty} 
 
@@ -29,10 +29,10 @@
 \end{problem}
 
 \begin{problem}
-	Visa att om två sidoklasser båda innehåller ett visst element så sammanfaller de.
+	Visa att om två sidoklasser till samma delgrupp båda innehåller ett visst element så sammanfaller de.
 \end{problem}
 
-\begin{theoremeT} \textbf{(Lagranges sats)} Storleken av en ändlig grupp delas av storleken av dess delgrupper.
+\begin{theoremeT} \textbf{(Lagranges sats)} Storleken av en delgrupp delar storleken av gruppen.
 \end{theoremeT} % Förtydliga
 
 \begin{problem}
@@ -51,13 +51,40 @@
   Visa att om storleken av två delgrupper är relativt prima så är deras snitt \(\left\{e\right\}\).
 \end{problem}
 
+\begin{definition} \textbf{(Ordning).} 
+  \textit{Ordningen} av ett element \(a\) är det minsta heltal \(n\) så att \(a ^ n = e\). 
+\end{definition}
+
 \begin{problem}
- Visa att \(a ^{|G|} = e\) för elementet \(a\) i gruppen \(G\) med \(|G| \) stycken element.
+  Vad är ordningen av vardera element i ``klä om strumpan''-gruppen?
+\end{problem}
+
+\begin{problem}
+  Vilket element i permutationsgruppen \(S_5\) har högst ordning?
+\end{problem}
+
+\begin{problem}
+  Låt \(a\) vara ett element i gruppen av heltal modulo \(n\) under addition. Vilka möjliga ordningar kan \(a\) ha?
+\end{problem}
+
+\begin{problem}
+  Visa att för ett element \(a\) så implicerar \(a^n = e\) att ordningen av \(a\) delar talet \(k\).
+\end{problem}
+
+
+\begin{problem}
+ Visa att för ett element \(a\) i en grupp \(G\) med \(n\) stycken element så måste \(a ^{n} = e\).
 \end{problem}
 
 \begin{theoremeT} \textbf{(Eulers sats).} 
-  För två positiva och relativt prima heltal \(a, n\) gäller att \(a ^{\varphi (n)} \equiv 1 \mod n\) där \(\phi (n)\) är antalet tal mindre än \(n\) som är relativt prima till \(n\).
+  För två positiva och relativt prima heltal \(a, n\) gäller att \(a ^{\varphi (n)} \equiv 1 \mod n\) där \(\varphi (n)\) är antalet tal mindre än eller lika med \(n\) som är relativt prima till \(n\).
+
 \end{theoremeT}
+
+\begin{problem}
+  Visa att heltalen med en multiplikativ invers modulo \(n\) är exakt de element som är relativt prima med \(n\).
+\end{problem}
+
 
 \begin{problem}
   Bevisa Eulers sats.
